@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 LocalMind AI
 
-## Getting Started
+> A private, local AI assistant dashboard powered by Ollama — your own ChatGPT that runs entirely on your Mac.
 
-First, run the development server:
+## ✨ Features
 
-```bash
+- 💬 Chat with local AI models (Qwen, DeepSeek, Gemma)
+- 🔒 100% private — nothing leaves your Mac
+- ⚡ Quick prompt buttons (business ideas, summarize, code, email)
+- 🔄 Model switcher — swap AI models on the fly
+- 🌙 Dark mode UI
+
+## 🚀 Getting Started
+
+### 1. Install Ollama
+Install Ollama via brew install ollama, then run ollama pull qwen3:1.7b and ollama serve
+
+### 2. Clone and Run
+git clone https://github.com/KippieG/localmind-ai.git
+cd localmind-ai
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Open browser
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js 16 + TypeScript + Tailwind CSS
+- Ollama local LLM server
+- Models: Qwen3, DeepSeek-R1, Gemma
 
-## Learn More
+## 📌 Roadmap
 
-To learn more about Next.js, take a look at the following resources:
+- Chat history
+- Memory system
+- Agent mode
+- File upload and summarize
+- Electron desktop app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👤 Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by @KippieG
